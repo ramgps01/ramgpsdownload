@@ -166,7 +166,7 @@
   }
 
 /* Responsive */
-  @media (max-width: 768px) {
+ /* @media (max-width: 768px) {
     header h1 {
       font-size: 1.4rem;
     }
@@ -188,9 +188,67 @@
     .hero {
       padding: 3rem 1rem;
     }
-  }
+  }*/
   
 
+
+  /* Responsive styles */
+
+  @media (max-width: 1024px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .top-buttons {
+      margin-top: 1rem;
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    .top-buttons a button {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.4rem;
+    }
+
+    .top-buttons {
+      justify-content: center;
+    }
+
+    .top-buttons a button {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .top-buttons {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .top-buttons a button {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  }
+
+  @keyframes textSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
 
 /* Service Section - 6 layout */
   .services {
